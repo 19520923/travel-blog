@@ -1,15 +1,95 @@
-.input-cg {
+.form__group {
   position: relative;
-  display: flex;
-  align-items: center;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+}
 
-  img {
+.form__field {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid $gray-color-2;
+  outline: 0;
+  font-size: 1.3rem;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: $gray-color-5;
+  font-weight: bold;
+}
+
+.form__field:focus {
+  ~ .form__label {
     position: absolute;
-    width: 20px;
-    left: 15px;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $primary-color;
+    font-weight: 700;
   }
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(
+    to right,
+    $primary-color,
+    $primary-variant-color
+  );
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
+}
 
-  input {
-    border-radius: $border-radius-1;
-  }
+.suggestions {
+  border: 1px solid $gray-color-1;
+  border-top-width: 0;
+  list-style: none;
+  margin-top: 0;
+  max-height: 143px;
+  overflow-y: auto;
+  padding-left: 0;
+  width: calc(300px + 1rem);
+  background-color: $white-color-1;
+  position: absolute;
+  z-index: 99;
+  @extend %ease;
+}
+
+.suggestions li {
+  padding: 0.5rem;
+}
+
+.suggestion-active,
+.suggestions li:hover {
+  background-color: $primary-variant-color;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid $gray-color-1;
 }

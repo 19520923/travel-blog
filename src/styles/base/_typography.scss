@@ -4,14 +4,16 @@
 */
 body {
   line-height: $base-line-height;
-  color: $text-default-color;
+  color: $background-color;
 }
 
 body,
 input,
 select,
-textarea {
+textarea,
+label {
   font-family: $font-family-default;
+  color: $background-color;
 }
 
 // headings and paragraph
@@ -20,13 +22,23 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-style: normal;
+h6,
+p,
+span {
   font-family: $font-family-default-m;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
 h1 {
-  font-size: $font-s-xlarge;
+  font-size: $font-s-xxlarge;
 }
 h2 {
   font-size: $font-s-large;
@@ -38,7 +50,7 @@ h6 {
   font-size: $font-s-medium;
 }
 
-p {
+p, span {
   font-size: $font-s-medium;
 }
 

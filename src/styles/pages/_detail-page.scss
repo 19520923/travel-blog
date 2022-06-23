@@ -108,7 +108,7 @@
     }
     .card {
       .card-header {
-        border-bottom: 1px solid $border-default-color;
+        border-bottom: 1px solid $primary-color;
         .card-title {
           margin: 0;
           text-align: center;
@@ -126,8 +126,8 @@
         }
         .info-badge {
           padding: 8px 15px;
-          background: $badge-pill-bg;
-          color: $text-primary-color;
+          background: $primary-color;
+          color: $primary-color;
           font-size: $font-s-big;
           .type {
             font-size: $font-s-regular;
@@ -147,7 +147,7 @@
           width: 50%;
         }
         .activated {
-          background: $action-dark-color;
+          background: $primary-color;
           color: $white-color-1;
           padding: 6px 20px;
           border-radius: 50px;
@@ -199,16 +199,16 @@
     }
     p,
     h5 {
-      color: $danger-dark-color;
+      color: $primary-color;
     }
     .sign-in {
       margin-top: 10px;
       span {
-        color: $text-primary-color;
+        color: $primary-color;
         cursor: pointer;
         @extend %ease;
         &:hover {
-          color: $primary-light-color;
+          color: $primary-color;
         }
       }
     }
@@ -223,6 +223,6 @@
     }
   }
   .primary-span {
-    color: $text-primary-color;
+    color: $primary-color;
   }
 }

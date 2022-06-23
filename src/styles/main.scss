@@ -1,34 +1,31 @@
-@import
-  'abstracts/variables',
-  'abstracts/functions',
-  'abstracts/mixins',
-  'abstracts/placeholders';
+@import 'abstracts/variables',
+'abstracts/functions',
+'abstracts/mixins',
+'abstracts/placeholders';
 
-@import 'themes/theme';
+@import 'vendors/editor';
 
-//@import 'vendors/bootstrap';
+@import 'base/reset',
+'base/typography';
 
-@import
-  'base/reset',
-  'base/typography';
+@import 'layout/container',
+'layout/header',
+'layout/footer',
+'layout/nav';
 
-@import
-  'layout/header',
-  'layout/footer';
+@import 
+'components/checkbox',
+'components/button',
+'components/icon',
+'components/input',
+'components/card',
+'components/spinner',
+'components/skeleton',
+'components/blog';
 
- @import
-  'components/checkbox',
-  'components/button',
-  'components/icon',
-  'components/input',
-  'components/card',
-  'components/spinner',
-  'components/skeleton';
-
-@import
-  'pages/common',
-  'pages/signin-callback-page',
-  'pages/detail-page',
-  'pages/home-page',
-  'pages/not-found-page';
-
+@import 'pages/common',
+'pages/signin-callback-page',
+'pages/detail-page',
+'pages/home-page',
+'pages/not-found-page',
+'pages/create-blog';

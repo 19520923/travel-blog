@@ -1,6 +1,6 @@
 %ease {
-  transition: all 0.35s ease-out;
-  -webkit-transition: all 0.35s ease-out !important;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-in-out !important;
 }
 
 %nav-underline {
@@ -33,7 +33,7 @@
 
 %note {
   padding: 15px;
-  border: 1px solid $info-light-color;
+  border: 1px solid $background-color;
   border-radius: $border-radius-2;
-  background: rgba($info-light-color, 0.1);
+  background: rgba($background-color, 0.1);
 }

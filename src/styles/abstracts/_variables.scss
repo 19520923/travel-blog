@@ -5,26 +5,16 @@
 
 // [color - variables]
 // branding
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-body, html {
-    font-family: 'Josefin Sans', sans-serif;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    margin: 0;
-}
-
-$primary-dark-color: #1565c0;
-$primary-light-color: #2699fb;
-$action-dark-color: #008a00;
-$action-light-color: #02a257;
-$info-light-color: #ffc048;
-$info-dark-color: #ffc048;
-$danger-light-color: #c23934;
-$danger-dark-color: #e01e5a;
-
-// transparent
+$primary-color: #4db5ff;
+$primary-variant-color: #4db5ff66;
+$background-color: #1f1f38;
+$background-color-variant: #2c2c6c;
+$light-color: rgba(255, 255, 255, 0.6);
+ // transparent
 $transparent-color: transparent;
+$transparent-black-color: rgba(0, 0, 0, 0.3);
 
 // whites-blacks
 $white-color-1: #ffffff;
@@ -40,30 +30,30 @@ $gray-color-6: #1d2b33;
 
 // element colors
 // footer
-$footer-color: $primary-dark-color;
+//$footer-color: $primary-color;
 // inputs
 $input-backround-color: $white-color-1;
 $input-border-color: $gray-color-2;
 $input-placeholder-color: $gray-color-2;
 // body
-$body-background: $gray-color-1;
+$body-background: $white-color-1;
 // badge - pill
-$badge-pill-bg: rgba($primary-dark-color, .1);
+//$primary-color: rgba($primary-color, .1);
 // footer
-$footer-bg: $primary-dark-color;
+//$footer-bg: $primary-color;
 // [text - variables]
 // text colors
-$text-primary-color: $primary-dark-color;
-$text-default-color: $black-color-1;
-$text-tone-light-color: $gray-color-2;
-$text-toned-color: $gray-color-3;
-$text-title-color: $gray-color-4;
-$text-hover-color: $text-primary-color;
-$text-white-color: $white-color-1;
+// $text-primary-color: $primary-color;
+// $text-default-color: $black-color-1;
+// $text-tone-light-color: $gray-color-2;
+// $text-toned-color: $gray-color-3;
+// $text-title-color: $gray-color-4;
+// $text-hover-color: $text-primary-color;
+// $text-white-color: $white-color-1;
 
 // font family
-$font-family-default: 'Josefin Sans', sans-serif;
-$font-family-default-m: 'Josefin Sans', sans-serif;
+$font-family-default: 'Macondo', sans-serif;
+$font-family-default-m: 'Macondo', sans-serif;
 $font-family-code: Consolas, Monaco, "Lucida Console", monospace;
 
 // font weights
@@ -76,7 +66,7 @@ $font-w-semi-bold: 600;
 $font-s-xsmall: 12px;
 $font-s-small: 14px;
 $font-s-regular: 16px; // -> base size
-$font-s-medium: 18px; 
+$font-s-medium: 18px;
 $font-s-big: 20px;
 $font-s-large: 22px; // ->  x size
 $font-s-xlarge: 25px; // -> xx size
@@ -84,46 +74,39 @@ $font-s-xxlarge: 32px;
 $font-s-xxxlarge: 38px;
 
 // inline hights
-$base-line-height: normal;
+$base-line-height: 1.5;
 
 // [border - variables]
 // border colors
-$border-default-color: $gray-color-2;
-$border-primary-color: $primary-dark-color;
-$border-white-color: $white-color-1;
+// $primary-color: $gray-color-2;
+// $border-primary-color: $primary-color;
+// $border-white-color: $white-color-1;
 
 // border radius
-$border-radius: 2px;
-$border-radius-1: 2px;
-$border-radius-2: 4px;
+$border-radius: 3rem;
+$border-radius-1: 2rem;
+$border-radius-2: 1rem;
 $border-radius-3: 6px;
 $border-radius-4: 8px;
 
 // [action - variables]
 // hover
-$primary-hover-color-1: rgba($primary-dark-color, 0.2);
-$primary-hover-color-2: rgba($primary-dark-color, 0.4);
-$primary-hover-color-3: rgba($primary-dark-color, 0.6);
+$primary-hover-color-1: rgba($primary-color, 0.2);
+$primary-hover-color-2: rgba($primary-color, 0.4);
+$primary-hover-color-3: rgba($primary-color, 0.6);
 
 // [breakpoint - variables]
 // breakpoints
 $breakpoints: (
-  "small": (
-    min-width: 576px
-  ),
-  "medium": (
-    min-width: 768px
-  ),
-  "large": (
-    min-width: 992px
-  ),
-  "extra": (
-    min-width: 1200px
-  )
+  "small": (min-width: 576px),
+  "medium": (min-width: 768px),
+  "large": (min-width: 992px),
+  "extra": (min-width: 1200px)
 );
 
 // [margins and paddings - variables]
 // paddings
+$body-padding: 1rem 3rem;
 $button-default-padding: 6px 20px;
 $navlink-padding-x: 0px;
 $card-padding-y: 1.25rem;

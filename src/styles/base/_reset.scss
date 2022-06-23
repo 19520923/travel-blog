@@ -5,7 +5,33 @@ html {
   scroll-behavior: smooth;
 }
 
+body,
+html {
+  font-family: $font-family-default;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: $body-padding;
+  background-color: $body-background;
+  color: $background-color;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 a {
   text-decoration: none;
-  color: $text-default-color;
+  color: $background-color;
+}
+
+ul, i {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }

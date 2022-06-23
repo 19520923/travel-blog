@@ -10,13 +10,13 @@
     line-height: 1;
     vertical-align: middle;
     cursor: pointer;
-    color: $primary-dark-color;
+    color: $primary-color;
     line-height: 28px;
     user-select: none;
     margin: 0;
     @extend %ease;
     a {
-      color: $primary-light-color;
+      color: $primary-color;
       @extend %ease;
     }
     &::before,
@@ -50,8 +50,8 @@
     visibility: visible;
   }
   input:checked ~ label::before {
-    background-color: $primary-dark-color;
-    border-color: $primary-dark-color;
+    background-color: $primary-color;
+    border-color: $primary-color;
   }
   label::before {
     border-radius: 3px;

@@ -1,0 +1,41 @@
+nav {
+  width: max-content;
+  position: fixed;
+  bottom: 2rem;
+  padding: 0.5rem 1.5rem;
+  z-index: 99999;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: $border-radius;
+  backdrop-filter: blur(15px);
+  background-color: rgba($background-color, 0.1);
+
+  & > ul {
+    display: flex;
+    gap: 0.8rem;
+
+    & > li {
+      background-color: $transparent-color;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      color: $light-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @extend %ease;
+
+      i {
+        transform: translateY(2px);
+      }
+
+      &:hover,
+      &.active {
+        background-color: $background-color;
+        i {
+          color: $white-color-1;
+        }
+      }
+    }
+  }
+}

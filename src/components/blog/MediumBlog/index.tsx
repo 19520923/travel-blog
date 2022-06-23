@@ -1,55 +1,58 @@
 import React from 'react'
+import Title from 'react-parallax-tilt'
 
 type Props = {}
 
 const MediumBlog = (props: Props) => {
-  return (
-    <div className=" flex-item two-per-row border-left-1 border-right-1 padding-default margin-bot-3">
-        <div className = ''>
-            <div className = 'img-fit'>
-                <img src="https://c4.wallpaperflare.com/wallpaper/370/228/846/baby-elephant-elephant-amazing-wildlife-wallpaper-preview.jpg" alt="" />
+    return (
+        <Title scale={1.1} glareEnable = {false}>
+            <div className='medium-blog'>
+                <div className='medium-blog__image'>
+                    <div>
+                    </div>
+                    <img src="https://c4.wallpaperflare.com/wallpaper/370/228/846/baby-elephant-elephant-amazing-wildlife-wallpaper-preview.jpg" alt="" />
+                </div>
+                <div className="medium-blog__content">
+                    <h4>
+                        Keepers of Ganesh: The Vanishing Art of Mahout
+                    </h4>
+                    <div className="flex countries">
+                        <div className="btn-cg primary round xsmall">
+                            <span>
+                                INDIA
+                            </span>
+                        </div>
+                        <div className="btn-cg primary round xsmall">
+                            <span>
+                                CULTURE
+                            </span>
+                        </div>
+                    </div>
+                    <p className="body">
+                        As Asian elephants face a myriad of threats to their existence, the 4,000 year old relationship between humans and elephants is in crisis. Along the Himalayan borderlands, captive elephants and their mahout caregivers are existing together on the margins of the modern era, with no easy answers or solutions.
+                    </p>
+                    <h3 className="author">
+                        Kim Frank and Jody Macdonald
+                    </h3>
+                    <div className="flex informations">
+                        <div className="flex-center">
+                            <i className="fa-solid fa-heart"></i>
+                            <span>
+                                ENLIGHTENING
+                            </span>
+                        </div>
+                        <div className="flex-center">
+                            <i className="fa-solid fa-clock"></i>
+                            <span>
+                                17 min read
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-        </div>
-        <div className="margin-top-1">
-            <div className="flex-container gap-default">
-                <div className="btn primary-background ">
-                    <h6>
-                        INDIA
-                    </h6>
-                </div>
-                <div className="btn outline">
-                    <h6>
-                        CULTURE
-                    </h6>
-                </div>
-            </div>
-            <h1 className="header">
-                Keepers of Ganesh: The Vanishing Art of Mahout
-            </h1>
-            <p className="body">
-                As Asian elephants face a myriad of threats to their existence, the 4,000 year old relationship between humans and elephants is in crisis. Along the Himalayan borderlands, captive elephants and their mahout caregivers are existing together on the margins of the modern era, with no easy answers or solutions.
-            </p>
-            <h3 className="author">
-                Kim Frank and Jody Macdonald
-            </h3>
-            <div className="flex-container gap-default margin-top">
-                <div className="emoution flex-container center">
-                    <i className="fa-solid fa-heart"></i>
-                    <h6>
-                        ENLIGHTENING
-                    </h6>
-                </div>
-                <div className="length flex-container center">
-                    <i className="fa-solid fa-clock"></i>
-                    <h6>
-                        17 min read
-                    </h6>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-  )
+        </Title>
+    )
 }
 
 export default MediumBlog

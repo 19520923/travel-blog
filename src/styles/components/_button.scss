@@ -3,22 +3,89 @@
 * @requires     variables.scss
 */
 
+.btn-ft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: $transparent-black-color;
+  backdrop-filter: blur(15px);
+  position: fixed;
+  bottom: 2.5rem;
+  right: 3rem;
+  z-index: 99999;
+}
+
 .btn-cg {
   display: flex;
   justify-content: center;
-  width: max-content;
-  padding: $button-default-padding;
   border-radius: $border-radius-1;
-  &.white {
-    color: $primary-dark-color;
-    background: $white-color-1;
-    border-color: $gray-color-2;
+  cursor: pointer;
+
+  span {
+    //font-size: small;
+    font-weight: bold;
+  }
+
+  &.primary {
+    color: $background-color;
+    background: $primary-color;
+    @extend %ease;
+
     &:hover {
-      border-color: $primary-dark-color;
+      color: $white-color-1;
+      background-color: $primary-variant-color;
+    }
+  }
+
+  &.background {
+    color: $white-color-1;
+    background: $background-color-variant;
+    @extend %ease;
+
+    &:hover {
+      color: $white-color-1;
+      background-color: $gray-color-4;
+    }
+  }
+
+  &.white {
+    color: $background-color;
+    background-color: $white-color-1;
+    @extend %ease;
+
+    &:hover {
+      background-color: $gray-color-2;
     }
   }
 
   &.round {
-    border-radius: 50px;
+    border-radius: $border-radius-1;
+    padding: $button-default-padding;
   }
+
+  &.xsmall {
+    span {
+      font-size: 10px;
+    }
+  }
+
+  &.md {
+    span {
+      font-size: $font-s-small;
+    }
+  }
+
+  &.circle {
+    border-radius: 50%;
+  }
+
+  &.s-default {
+    width: 3rem;
+    height: 3rem;
+  }
+
 }

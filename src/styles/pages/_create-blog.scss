@@ -1,0 +1,25 @@
+.createBlogContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color: $background-color, $alpha: 0.4);
+  z-index: 100000000;
+  width: 100vw;
+  height: 100vh;
+  .createBlog {
+    width: 70%;
+    height: 80%;
+    border-radius: $border-radius-2;
+    padding: 1rem 3rem;
+    background-color: $white-color-1;
+    &__header {
+      display: grid;
+      grid-template-columns: 48% 48%;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
